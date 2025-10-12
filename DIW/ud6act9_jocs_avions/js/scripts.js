@@ -13,6 +13,7 @@ const pixels_a_moure = 15;
 // Variables globals del joc
 let avio, joc, musicaFons, soAvio;
 let musicaActiva = true;
+let soAvioActiu = true;
 let modalObert = false; //bloqueja accions mentre el modal està obert
 let ultimaDireccio = "right"; //direcció cap a la dreta per defecte
 
@@ -105,9 +106,10 @@ function getAvioPos() {
  * Reproduir el so de moviment de l’avió
  */
 function reproduirSoMoviment() {
-  if (!soAvio) return;
-  soAvio.currentTime = 0;
+  if (!soAvio || soAvioActiu) return; 
+  soAvio.loop = true;
   soAvio.play().catch(() => {});
+  soAvioActiu = true;
 }
 
 // ----------------------------------------------------
@@ -152,7 +154,11 @@ function moureAvio(evt) {
 }
 
 function pararAvio() {
-  console.log("parem l'avió");
+  if (soAvioActiu && soAvio) {
+    soAvio.pause();
+    soAvio.currentTime = 0;
+    soAvioActiu = false;
+  }
 }
 
 
@@ -199,6 +205,10 @@ function docReady() {
 
   window.addEventListener("keydown", moureAvio);
   window.addEventListener("keyup", pararAvio);
+
+  //Botons de nivel
+  document.getElementById("nivell1").addEventListener("click", () => canviarNivell(1));
+  document.getElementById("nivell2").addEventListener("click", () => canviarNivell(2));
 
 
   configurarModal();
