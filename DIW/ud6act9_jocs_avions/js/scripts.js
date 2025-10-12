@@ -1,17 +1,3 @@
-/**
- * Per a canviar el fons del nivell
- */
-document.addEventListener("DOMContentLoaded", function()  {
-  document.getElementById("nivell1").addEventListener("click", function () {
-    document.body.style.backgroundImage =
-      "url('../img/fons_nivells/nivell1.jpg')";
-  });
-
-  document.getElementById("nivell2").addEventListener("click", function () {
-    document.body.style.backgroundImage =
-      "url('../img/fons_nivells/nivell2.jpg')";
-  });
-});
 
 
 // ----------------------------------------------------
@@ -40,11 +26,10 @@ let ultimaDireccio = "right"; //direcció cap a la dreta per defecte
 function moureEsquerra() {
   let pos = getAvioPos();
   if (pos.left > 0) {
+    ultimaDireccio = "esquerra";
     avio.style.left = pos.left - pixels_a_moure + "px";
-    // Canviem la imatge de fons per la versió en moviment
     avio.style.backgroundImage = "url('img/sprites/avioMovEsquerra.png')";
     reproduirSoMoviment();
-    // Imatge estàtica
     setTimeout(() => avio.style.backgroundImage = "url('img/sprites/avioEsquerra.png')", 150);
   }
 }
@@ -56,6 +41,7 @@ function moureDreta() {
   let pos = getAvioPos();
   const limitDret = window.innerWidth - avio.offsetWidth;
   if (pos.left < limitDret) {
+    ultimaDireccio = "dreta";
     avio.style.left = pos.left + pixels_a_moure + "px";
     avio.style.backgroundImage = "url('img/sprites/avioMoviDreta.png')";
     reproduirSoMoviment();
@@ -121,9 +107,7 @@ function getAvioPos() {
 function reproduirSoMoviment() {
   if (!soAvio) return;
   soAvio.currentTime = 0;
-  soAvio.play().catch(() => {
-    console.log("El so d'avió es reproduirà després d'una interacció.");
-  });
+  soAvio.play().catch(() => {});
 }
 
 // ----------------------------------------------------
@@ -167,13 +151,19 @@ function moureAvio(evt) {
   }
 }
 
-/**
- * Funció que mostra un missatge quan parem l'avió
- */
 function pararAvio() {
   console.log("parem l'avió");
 }
 
+
+// ----------------------------------------------------
+// CANVI DE NIVELL
+// ----------------------------------------------------
+
+function canviarNivell(num) {
+  if (modalObert) return;
+  document.body.style.backgroundImage = `url('img/fons_nivells/nivell${num}.jpg')`;
+}
 // ------------------------
 // Finestra modal d’ajuda
 // ------------------------
@@ -210,8 +200,6 @@ function docReady() {
   window.addEventListener("keydown", moureAvio);
   window.addEventListener("keyup", pararAvio);
 
-  document.getElementById("nivell1").addEventListener("click", () => canviarNivell(1));
-  document.getElementById("nivell2").addEventListener("click", () => canviarNivell(2));
 
   configurarModal();
 }
