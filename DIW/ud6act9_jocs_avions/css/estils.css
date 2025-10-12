@@ -1,0 +1,158 @@
+/*
+* Imports per a poder utilitzar la font "Modak" i icones
+*/
+@import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+/*
+* Estil de l'avió: Puja i baixa lleugerament.
+*/
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+#avio {
+  background-image: url(../img/sprites/avioDreta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 12vw;
+  height: 11vh;
+  overflow: hidden;
+  animation: float 2s ease-in-out infinite;
+  z-index: 1;
+}
+
+.marcador {
+  font-family: "Modak";
+  color:RGB(163, 45, 71);
+  font-size: 2.1em;
+  border: 2px RGB(180, 193, 214) solid;
+  width: 5.44vw;
+  height: 5.6vh;
+  margin-top: 1.9vh;
+  margin-right: 0.8vw;
+  float: right;
+  border-radius: 1.5vh;
+  background-color:RGB(151, 165, 186);
+  box-shadow: 4px 6px 6px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcador::before {
+  content: "100 pt";
+}
+
+body{
+  background-image: url("../img/fons_nivells/nivell1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+}
+
+.botons{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ajuda, #nivell1, #nivell2{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  background-color: RGB(115, 169, 179);
+  color: white;
+  border: solid;
+  border-color: RGB(99, 141, 160);
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 40px;
+}
+
+footer{
+  border-top: solid 3px white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10.3;
+  margin: 0;
+  background-color:RGB(108, 108, 110) ;
+  opacity: 0.8;
+}
+
+/*
+* Estils per al modal d'ajuda
+*/
+.modal {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-contingut {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 3px;
+  width: 20vw;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.modal-contingut h2 {
+  background-color: RGB(93, 155, 178);
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.modal-contingut ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.modal-contingut li {
+  margin: 10px 0;
+}
+
+/*
+* Estils de la "X" per tancar el modal
+*/
+.tancar {
+  color: white;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color:RGB(96, 96, 96);
+  border-radius: 3px;
+  width: 2vw;
+  height: 2vh;
+  text-align: center;
+}

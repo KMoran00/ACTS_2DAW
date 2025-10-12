@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kirsha Morán" />
+    <title>Red Plane</title>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/estils.css" />
+</head>
+
+<body onload="docReady()">
+    <header>
+        <div class="marcador"></div>
+    </header>
+    <main>
+        <!-- avió -->
+        <div id="avio"></div>
+
+    </main>
+
+    <footer>
+        <div class="botons">
+            <button id="ajuda">Ajuda</button>
+            <button id="nivell1">Nivell 1</button>
+            <button id="nivell2">Nivell 2</button>
+        </div>
+
+    </footer>
+
+    <!-- Panell d'ajuda -->
+    <div id="panellAjuda" class="modal">
+        <div class="modal-contingut">
+            <span class="tancar"> &times; </span>
+
+            <h2>AJUDA</h2>
+            <!-- Icones del panell d'ajuda (fletxes i creu)-->
+             <ul>
+                <li><i class="fas fa-arrow-left"></i> Esquerra</li>
+                <li><i class="fas fa-arrow-right"></i> Dreta</li>
+                <li><i class="fas fa-arrow-up"></i> Amunt</li>
+                <li><i class="fas fa-arrow-down"></i> Avall</li>
+                <li>1: Parar/Activar so</li>
+             </ul>
+        </div>
+    </div>
+    
+    <!-- Música i efectes de so del joc -->
+    <audio id="musicaFons" src="audio/musica_fons.mp3" loop></audio>
+    <audio id="soAvio" src="audio/avio_es_mou.mp3"></audio>
+
+</body>
+
+</html>
