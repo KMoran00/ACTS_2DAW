@@ -121,6 +121,7 @@ function reproduirSoMoviment() {
  * @param {*} evt: event que es llança
  */
 function moureAvio(evt) {
+  if (modalObert) return;  //Si el modal està obert, no es pot moure l'avió
   switch (evt.keyCode) {
     case 37:
       //Fletxa esquerra
