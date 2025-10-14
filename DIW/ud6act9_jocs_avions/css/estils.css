@@ -70,6 +70,7 @@ body{
   margin-bottom: 12px;
 }
 
+/* Estil botó ajuda */
 #ajuda{
   font-family: sans-serif;
   font-size: 1em;
@@ -82,8 +83,9 @@ body{
   padding: 10px 20px;
   margin-left: 402px;
   border-radius: 40px;
-
 }
+
+/* Estil botons nivells */
 #nivell1, #nivell2{
   font-family: sans-serif;
   font-size: 1em;
@@ -103,7 +105,7 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 10.3;
+  height: 14%;
   margin: 0;
   background-color:RGB(108, 108, 110) ;
   opacity: 0.8;
