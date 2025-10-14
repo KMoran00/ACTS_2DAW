@@ -24,8 +24,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  width: 12vw;
-  height: 11vh;
+  width: 14vw;
+  height: 14vh;
   overflow: hidden;
   animation: float 2s ease-in-out infinite;
   z-index: 1;
