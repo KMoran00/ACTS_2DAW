@@ -54,48 +54,70 @@
 body{
   background-image: url("../img/fons_nivells/nivell1.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
   height: 100vh;
   width: 100vw;
-  margin: 0;
   overflow: hidden;
 }
 
-.botons{
-  margin-top: 20px;
-  margin-bottom: 12px;
+/* ----- Contenedor de botones ----- */
+.botons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 /* ----- Botones del footer ----- */
-#ajuda,
-#nivell1,
-#nivell2 {
+#ajuda, #nivell1, #nivell2 {
+  position: absolute;
   font-family: sans-serif;
   font-size: 16px;
   background-color: rgb(115, 169, 179);
-  width: 120px;
-  height: 60px;
+  width: 110px;
+  height: 55px;
   color: white;
-  border: solid 2px rgb(99, 141, 160);
+  border: 2px solid rgb(99, 141, 160);
   border-radius: 40px;
   cursor: pointer;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+  bottom: 12px;
+}
+
+/* --- Posiciones de los botones pixel perfect --- */
+#ajuda {
+  left: 400px;
+}
+
+#nivell1 {
+  left: 525px;
+  width: 120px;
+}
+
+#nivell2 {
+  left: 660px;
+  width: 120px;
+
 }
 
 /* ----- Footer ----- */
 footer {
-  border-top: solid 3px white;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* Altura fija */
-  margin: 0;
+  height: 80px; 
   background-color: rgba(108, 108, 110, 0.8);
+  border-top: solid 3px white;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 9;
 }
+
+
 
 
 /*
