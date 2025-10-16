@@ -71,7 +71,7 @@ function moureAmunt() {
  */
 function moureAvall() {
   let pos = getAvioPos();
-  const limitBaix = window.innerHeight - avio.offsetHeight - 100;
+  const limitBaix = window.innerHeight - avio.offsetHeight;
   if (pos.top < limitBaix) {
     avio.style.top = pos.top + pixels_a_moure + "px";
     //Imatge en moviment segons la direcció actual
