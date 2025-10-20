@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* -------Estils per a l'header---------- */
+
+header{
+    background-color: black;
+}
+
+#logoText{
+    display: flex;
+}
+
+.icoEscut{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headerText{
+    display: flex;
+    align-items: center;
+}
+
+.headerText, h2{
+    color: white;
+    font-family:Arial;
+}
+
+.navegacio{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+/* -------Estils per al main1 ---------- */
+main{
+    margin-top: 130px;
+}
+
+.mainText{
+    justify-content: center;
+    text-align: center;
+}
