@@ -3,7 +3,7 @@ function conectarBD()
 {
     $host = "localhost";
     $db = "Practica_PDO";
-    $user = "root";         //Usuario de la base de datos
+    $user = "kirsha";         //Usuario de la base de datos
     $pass = "Lliurex_01";   //Contraseña de la base de datos
 
     try {
