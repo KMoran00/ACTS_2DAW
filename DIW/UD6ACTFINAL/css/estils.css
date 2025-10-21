@@ -3,45 +3,53 @@
     box-sizing: border-box;
 }
 
-/* -------Estils per a l'header---------- */
+/* -------Estils per al header---------- */
 
 header{
-    background-color: black;
-}
-
-#logoText{
-    display: flex;
+    background-color: rgb(14, 182, 84);
+    height: 50px;
+    width: 100%;
 }
 
 .icoEscut{
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 35px;
+    height: 40px;
+    margin-left: 17px;
+    margin-right: 9px;
 }
-
-.headerText{
+.textLogo{
+    color: white;
     display: flex;
     align-items: center;
+    font-family:Arial;
+    text-align: center;
 }
 
-.headerText, h2{
-    color: white;
-    font-family:Arial;
-}
+
+
 
 .navegacio{
     color: white;
+    list-style: none;
+    justify-content: end;
     text-decoration: none;
-    margin: 30px;
+    display: inline-flex;
+    
+}
+ul,li{
+    display: inline-flex;
 }
 
 /* -------Estils per al main1 ---------- */
 main{
-    margin-top: 130px;
+    margin-top: 20px;
+    background-image: url("../img/confeti.svg");
+
+
 }
 
 .mainText{
     justify-content: center;
     text-align: center;
+
 }
