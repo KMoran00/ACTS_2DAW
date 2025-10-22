@@ -1,5 +1,5 @@
 <?php
-include("funciones.php"); // Incluye el archivo de funciones
+require_once 'funciones.php'; // Incluye el archivo de funciones
 
 $mensaje = "";
 

@@ -1,6 +1,6 @@
 <?php
-include 'conexion.php'; // Incluye el archivo de conexión a la base de datos
-include 'cliente.php';  // Incluye el archivo con la clase Cliente
+require_once 'conexion.php'; // Incluye el archivo de conexión a la base de datos
+require_once 'cliente.php';  // Incluye el archivo con la clase Cliente
 
 // Función para obtener todos los clientes
 function obtenerClientes()
@@ -9,6 +9,7 @@ function obtenerClientes()
         $conexion = conectarBD();
         $consulta = "SELECT * FROM clientes";
         $stmt = $conexion->query($consulta);
+        $stmt -> execute();
         $clientes = [];
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -34,12 +35,23 @@ function obtenerClientes()
 function insertarCliente($dni, $nombre, $direccion, $localidad, $provincia, $telefono, $email)
 {
     try {
-        $conexion = conectarBD();
-        $consulta = "INSERT INTO clientes (dni, nombre, direccion, localidad, provincia, telefono, email) VALUES (:dni, :nombre, :direccion, :localidad, :provincia, :telefono, :email)";
-
-        if ($conexion->exec($consulta)) {
+        $pdo = conectarBD();
+        $sql = "INSERT INTO clientes (dni, nombre, direccion, localidad, provincia, telefono, email) 
+                VALUES (:dni, :nombre, :direccion, :localidad, :provincia, :telefono, :email)";
+        
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindParam(':dni', $dni);
+        $stmt->bindParam(':nombre', $nombre);
+        $stmt->bindParam(':direccion', $direccion);
+        $stmt->bindParam(':localidad', $localidad);
+        $stmt->bindParam(':provincia', $provincia);
+        $stmt->bindParam(':telefono', $telefono);
+        $stmt->bindParam(':email', $email);
+        
+        if ($stmt->execute()) {
             return true;
         } else {
+            echo "No se pudo insertar el cliente";
             return false;
         }
     } catch (PDOException $e) {

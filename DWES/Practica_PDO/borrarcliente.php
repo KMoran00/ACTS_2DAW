@@ -1,5 +1,5 @@
 <?php
-include("funciones.php"); // Incluye el archivo de funciones
+require_once 'funciones.php'; // Incluye el archivo de funciones
 
 
 $dni = $_GET['dni']; // Obtiene el DNI del cliente a borrar

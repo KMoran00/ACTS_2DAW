@@ -38,7 +38,7 @@ if ($_POST) {
     <?php } ?>
     
     <?php if ($cliente) { ?>
-        <form method="POST">
+        <form action="$_REQUEST['PHP_SELF']">
             DNI: <input type="text" value="<?php echo $cliente->getDni(); ?>" disabled><br>
             Nombre: <input type="text" name="nombre" value="<?php echo $cliente->getNombre(); ?>" required><br>
             Dirección: <input type="text" name="direccion" value="<?php echo $cliente->getDireccion(); ?>"><br>
