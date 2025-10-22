@@ -6,7 +6,7 @@
 /* -------Estils per al header---------- */
 
 header{
-    background-color: rgb(14, 182, 84);
+    background-color:black;
     height: 50px;
     width: 100%;
 }
@@ -27,29 +27,49 @@ header{
 
 
 
+.navegacio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
 
-.navegacio{
-    color: white;
-    list-style: none;
-    justify-content: end;
-    text-decoration: none;
-    display: inline-flex;
-    
 }
-ul,li{
-    display: inline-flex;
+
+.navegacio ul {
+    display: flex;
+    gap: 30px; /* separació entre enllaços */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacio li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.navegacio li a:hover {
+    color:RGB(218, 136, 85);
 }
 
 /* -------Estils per al main1 ---------- */
 main{
-    margin-top: 20px;
-    background-image: url("../img/confeti.svg");
-
-
+    background: linear-gradient(to bottom, rgb(58, 32, 153), rgb(71, 13, 94)),
+                url("../img/confeti.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px; 
 }
 
+
+
 .mainText{
+    margin-top: 70px;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    color: white;
 
 }
