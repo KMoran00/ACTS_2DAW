@@ -61,6 +61,7 @@ function insertarCliente($dni, $nombre, $direccion, $localidad, $provincia, $tel
     }
 
 }
+
 // Función para obtener un cliente por su DNI
 function obtenerClientePorDni($dni)
 {
@@ -88,6 +89,7 @@ function obtenerClientePorDni($dni)
 
 }
 
+
 // Función para actualizar un cliente existente
 function actualizarCliente($dni, $nombre, $direccion, $localidad, $provincia, $telefono, $email)
 {
@@ -108,7 +110,11 @@ function actualizarCliente($dni, $nombre, $direccion, $localidad, $provincia, $t
             return false;
         }
     }
+    catch (Exception $e) {
+        die("Error al obtener cliente: " . $e->getMessage());
+    }
 }
+
 
 // Función para borrar un cliente por su DNI
 function borrarCliente($dni)
@@ -127,4 +133,5 @@ function borrarCliente($dni)
         return false;
     }
 }
+    
 ?>
