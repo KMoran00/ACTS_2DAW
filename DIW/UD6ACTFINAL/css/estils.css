@@ -84,9 +84,9 @@ main {
     padding-top: 12%;
     font-size: 3.2ch;
     word-spacing: 0.6ch;
-
 }
- /* Text avall del títol */
+
+/* Text avall del títol */
 .MT2 {
     font-weight: 500;
     line-height: 135%;
@@ -94,4 +94,23 @@ main {
     margin-right: 10%;
     font-size: 1.5ch;
     padding-top: 10px
+}
+
+
+
+/*------ Contenidors -------*/
+.contenidor_Taronja {
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 95%;
+    border-radius: 15px;
+    background-image: linear-gradient(153deg, #e64c4c 0%, #fb8332 95%);
+
+}
+
+.contenidor_Morat {
+    margin-right: 5%;
+    margin-top: 4%;
+    width: 95%;
+    border-radius: 15px;    background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
 }
