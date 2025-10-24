@@ -8,7 +8,7 @@
 /* -------Estils per al header---------- */
 
 header{
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(162, 201, 55);
     height: 50px;
     width: 100%;
 }
@@ -58,21 +58,26 @@ header{
 
 /* -------Estils per al main ---------- */
 main{
-background-image: radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    min-height: 100vh; /* ocupa toda la altura de la ventana */
+    background-image: radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );    
     
 }
 
 .confeMain{
+    position: absolute;
+    z-index: 1;
     padding-top: 15px;
     padding-left: 11px;
 }
 
 
 .mainText{
-    margin-top: 70px;
+    position: relative;
+    z-index: 2;
     justify-content: center;
     text-align: center;
     color: white;
-
+    padding-top: 13%;
+    font-size: 3ch;
 }
