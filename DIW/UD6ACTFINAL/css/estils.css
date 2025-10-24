@@ -1,5 +1,5 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     box-sizing: border-box;
     font-family: Ubuntu, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -7,22 +7,23 @@
 
 /* -------Estils per al header---------- */
 
-header{
-    background-color:rgb(162, 201, 55);
+header {
+    background-color: rgb(162, 201, 55);
     height: 50px;
     width: 100%;
 }
 
-.icoEscut{
+.icoEscut {
     width: 35px;
     height: 40px;
     margin-right: 10px;
 }
-.textLogo{
+
+.textLogo {
     color: white;
     display: flex;
     align-items: center;
-    font-family:Arial;
+    font-family: Arial;
     text-align: center;
 }
 
@@ -38,7 +39,8 @@ header{
 
 .navegacio ul {
     display: flex;
-    gap: 60px; /* separació entre enllaços */
+    gap: 60px;
+    /* separació entre enllaços */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,18 +55,19 @@ header{
 }
 
 .navegacio li a:hover {
-    color:RGB(218, 136, 85);
+    color: RGB(218, 136, 85);
 }
 
 /* -------Estils per al main ---------- */
-main{
+main {
     position: relative;
-    min-height: 100vh; /* ocupa toda la altura de la ventana */
-    background-image: radial-gradient( 80vw circle at 50% 10%, #3a2099 17%, #480c59 100% );    
-    
+    min-height: 100vh;
+    /* ocupa toda la altura de la ventana */
+    background-image: radial-gradient(80vw circle at 50% 10%, #3a2099 17%, #480c59 100%);
+
 }
 
-.confeMain{
+.confeMain {
     position: absolute;
     z-index: 1;
     padding-top: 15px;
@@ -72,12 +75,23 @@ main{
 }
 
 
-.mainText{
+.mainText {
     position: relative;
     z-index: 2;
     justify-content: center;
     text-align: center;
     color: white;
-    padding-top: 13%;
-    font-size: 3ch;
+    padding-top: 12%;
+    font-size: 3.2ch;
+    word-spacing: 0.6ch;
+
+}
+ /* Text avall del títol */
+.MT2 {
+    font-weight: 500;
+    line-height: 135%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5ch;
+    padding-top: 10px
 }
