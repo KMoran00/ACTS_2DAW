@@ -8,7 +8,7 @@
 /* -------Estils per al header---------- */
 
 header {
-    background-color: rgb(162, 201, 55);
+    background-color: rgb(13, 139, 177);
     height: 50px;
     width: 100%;
 }
@@ -61,48 +61,50 @@ header {
 /* -------Estils per al main ---------- */
 main {
     position: relative;
-    min-height: 100vh;
-    /* ocupa toda la altura de la ventana */
+    overflow: hidden;
     background-image: radial-gradient(80vw circle at 50% 10%, #3a2099 17%, #480c59 100%);
 
 }
 
 .confeMain {
     position: absolute;
-    z-index: 1;
     padding-top: 15px;
     padding-left: 11px;
+    width: 100%;
+    z-index: 0; 
 }
 
 
 .mainText {
     position: relative;
-    z-index: 2;
     justify-content: center;
     text-align: center;
     color: white;
-    padding-top: 12%;
-    font-size: 3.2ch;
+    padding-top: 11%;
+    font-size: 3.5ch;
     word-spacing: 0.6ch;
 }
 
 /* Text avall del títol */
 .MT2 {
-    font-weight: 500;
-    line-height: 135%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 1.5ch;
     padding-top: 10px
 }
 
 
-
 /*------ Contenidors -------*/
+.contenidor_Taronja,
+.contenidor_Morat {
+    position: relative;
+    z-index: 1; 
+}
 .contenidor_Taronja {
     margin-left: 5%;
     margin-top: 4%;
     width: 95%;
+    height: 95%;
     border-radius: 15px;
     background-image: linear-gradient(153deg, #e64c4c 0%, #fb8332 95%);
 
@@ -112,5 +114,42 @@ main {
     margin-right: 5%;
     margin-top: 4%;
     width: 95%;
-    border-radius: 15px;    background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
+    height: 95%;
+    border-radius: 15px;
+    background-image: linear-gradient(153deg, #da6bf8 0%, #815eff 95%);
+}
+
+.contingut {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    color: white;
+}
+
+.contingut h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    /* espacio entre el icono y el texto */
+    font-size: 4ch;
+    margin-bottom: 5%;
+}
+
+.contingut img {
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+
+.contingut p {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.contingut h5 {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
