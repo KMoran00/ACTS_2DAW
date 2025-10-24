@@ -6,7 +6,7 @@
 /* -------Estils per al header---------- */
 
 header{
-    background-color:black;
+    background-color:rgb(209, 137, 137);
     height: 50px;
     width: 100%;
 }
@@ -14,8 +14,7 @@ header{
 .icoEscut{
     width: 35px;
     height: 40px;
-    margin-left: 17px;
-    margin-right: 9px;
+    margin-right: 10px;
 }
 .textLogo{
     color: white;
@@ -37,17 +36,18 @@ header{
 
 .navegacio ul {
     display: flex;
-    gap: 30px; /* separació entre enllaços */
+    gap: 60px; /* separació entre enllaços */
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-right: 65px;
+
 }
 
 .navegacio li a {
     color: white;
     text-decoration: none;
     font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
 }
 
 .navegacio li a:hover {
@@ -56,8 +56,7 @@ header{
 
 /* -------Estils per al main1 ---------- */
 main{
-    background: linear-gradient(to bottom, rgb(58, 32, 153), rgb(71, 13, 94)),
-                url("../img/confeti.svg");
+    background: linear-gradient(to bottom, rgb(58, 32, 153), rgb(71, 13, 94));
     background-repeat: no-repeat;
     background-position: center;
     min-height: 400px; 
