@@ -227,10 +227,12 @@ main {
 }
 
 h2 {
-
     text-align: center;
 }
 
+.arranqOL, li{
+    margin-top: 0.5em;
+}
 /* Estils de blocs de codi*/
 #daw,
 code {
