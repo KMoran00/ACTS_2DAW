@@ -223,16 +223,18 @@ main {
     margin-top: 10%;
     margin-left: 18%;
     margin-right: 21%;
-
+    line-height: 2;
 }
 
 h2 {
     text-align: center;
 }
 
-.arranqOL, li{
+.arranqOL,
+li {
     margin-top: 0.5em;
 }
+
 /* Estils de blocs de codi*/
 #daw,
 code {
@@ -243,25 +245,30 @@ code {
     color: RGB(196, 185, 202);
 }
 
-.cntrl,
-kbd {
+.gris {
     background-color: RGB(178, 178, 178);
     color: #000;
     border-radius: 4px;
     padding: 3px 5px;
     font-size: 0.9em;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.codigo {
+    border-style: solid;
+    border-color: RGB(232, 233, 233);
+    border-radius: 6px;
+    width: 61vw;
+
 }
 
 .codigo,
 code {
     font-family: 'Source Code Pro', monospace;
-    background-color: RGB(246, 247, 248);
-    border-color: RGB(244, 245, 245);
-    border-radius: 6px;
     padding: 4px 6px;
-    color:RGB(97, 97, 98);
-
-    width: 61vw;
+    color: RGB(97, 97, 98);
+    background-color: RGB(246, 247, 248);
 }
 
 /*ROIG I GROC DEL CODI*/
@@ -273,3 +280,6 @@ code {
     color: RGB(231, 84, 84);
 }
 
+.taronja {
+    color: RGB(250, 100, 0);
+}
