@@ -40,7 +40,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
-
 }
 
 .navegacio ul {
@@ -293,4 +292,37 @@ code {
     padding-bottom: 1%;
     padding-left: 2%;
     width: 64vw;
+}
+
+.partNegra {
+    background-color: #000;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.partNegra,
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.partNegra p {
+    color: RGB(196, 196, 196);
+
+}
+
+.taronClar a {
+    text-decoration: none;
+}
+
+.taronClar a:hover {
+    color: #e7955e;
+    color: aqua;
+}
+
+
+.textAjuda{
+
 }
