@@ -217,6 +217,7 @@ main {
 .arranq {
     background-color: white;
     width: 100vw;
+    margin-top: 3%;
 }
 
 .contiArranq {
@@ -271,7 +272,7 @@ code {
     background-color: RGB(246, 247, 248);
 }
 
-/*ROIG I GROC DEL CODI*/
+/*ROIG I GROC DEL CODI --------- TEXT TARONJA */
 .groc {
     color: RGB(214, 181, 94);
 }
@@ -282,4 +283,14 @@ code {
 
 .taronja {
     color: RGB(250, 100, 0);
+}
+
+.casellaArranq {
+    margin-top: 5%;
+    border-style: solid;
+    border-color: RGB(248, 248, 248);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    width: 64vw;
 }
