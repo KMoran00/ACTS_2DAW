@@ -136,9 +136,10 @@ main {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10%;
-    color: rgb(224, 219, 219);
+    color: rgb(224, 217, 217);
 }
-.contingut:hover{
+
+.contingut:hover {
     color: white;
 }
 
@@ -344,15 +345,24 @@ code {
 
 .taronClar a {
     text-decoration: none;
-  
+
 }
 
 .taronClar a:hover {
-    color: #eca368; 
+    color: #eca368;
 }
 
 
 /*--------------- APARTAT AJUDA -------------*/
+.textAjuda p {
+    color: #000;
+    padding-top: -2em;
+
+}
+
+.textAjuda h3 {
+    color: #000;
+}
 
 .textAjuda h1 {
     text-align: center;
@@ -362,3 +372,5 @@ code {
     line-height: 0;
     letter-spacing: 0.003em;
 }
+
+/*--------------- FOOTER -------------*/
