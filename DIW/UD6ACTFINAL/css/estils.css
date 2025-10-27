@@ -24,8 +24,8 @@ header {
     background-color: black;
     height: 50px;
     width: 100%;
-    position: fixed;       
-    z-index: 1000;        
+    position: fixed;
+    z-index: 1000;
 }
 
 
@@ -375,7 +375,36 @@ code {
     font-size: 45px;
     font-weight: 400;
     line-height: 0;
-    letter-spacing: 0.003em;
 }
 
-/*--------------- FOOTER -------------*/
+/* --- FOOTER --- */
+footer {
+  padding: 20px 60px;
+  font-size: 0.9em;
+}
+
+footer .col-12 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.copy p {
+  margin: 0;
+  color:RGB(128, 128, 128);
+  font-size: 0.9em;
+}
+
+.optFooter {
+  display: flex;
+  gap: 40px; 
+  align-items: center;
+}
+
+.optFooter p:hover {
+  color: rgb(218, 136, 85);
+}
+
+
+
+/*COOKIES*/
