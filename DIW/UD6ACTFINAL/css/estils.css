@@ -12,8 +12,10 @@ body {
 }
 
 .pL0 {
-    padding-left: 0px;
+    padding-left: 0 !important;
+
 }
+
 
 
 /* -------Estils per al header---------- */
@@ -22,7 +24,10 @@ header {
     background-color: black;
     height: 50px;
     width: 100%;
+    position: fixed;       
+    z-index: 1000;        
 }
+
 
 .icoEscut {
     width: 35px;
