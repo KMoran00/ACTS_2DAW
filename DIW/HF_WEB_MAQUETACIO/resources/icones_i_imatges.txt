@@ -1,0 +1,61 @@
+Tipografia de lletra: Inter de Google
+
+Icones: FontAweSome
+
+Tots els enllaços s'han de veure amb una maneta i seran un enllaç.  Si no van a cap lloc aniran amb un #.  I si van a alguna xarxa social obriran la pàgina d'eixa xarxa social.
+
+Els enllaços quan passes per damunt faran que es vega un poc més suau el color.  Veure imatges.
+S'ha de respectar en tot moment els aspectes d'usabilitat.
+
+<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>
+                 ICONES
+<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>
+==============
+Encapçalament
+==============
+circle-question
+moon
+globe
+user
+
+==============
+Peu
+==============
+
+chevron-right
+
+============================
+Peu desplegable mòbil
+============================
+
+chevron-down
+chevron-up
+
+
+=================
+Menú hamburguesa
+=================
+
+bars
+
+
+<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>
+                 IMATGES
+<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>
+
+==============
+Encapçalament
+==============
+logo_tenda
+
+==============
+Peu
+==============
+maestro
+master
+visa
+pal
+gpay
+apay
+
+
