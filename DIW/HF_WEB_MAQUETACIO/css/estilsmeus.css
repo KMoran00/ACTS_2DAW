@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.barraMenu ul li{
+    list-style: none;
+    display: inline;
+    border: solid black;
+    border-radius: 20px;
+}
