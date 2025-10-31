@@ -1,15 +1,41 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(129, 36, 206);
+}
+
+main {
+    margin-top: 15px;
+}
+
+.linkHead li a {
+    text-decoration: none;
+    color: black;
+
 }
 
 .barraMenu ul li {
     list-style: none;
     display: inline;
     border: solid black;
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 6px;
+    font-size: 1.2em;
+}
+/* Efecte blau quan pases per la opció */
+.barraMenu ul li:hover {
+    background-color: #89b2ce;
+
 }
 
+/* Opció de la Home seleccionada */
+.opcSelec {
+    background-color: #89b2ce;
+}
+
+.logoNA {
+    width: 90px;
+}
 
 /* Estil per als hr més gruixos */
 .hrGros {
