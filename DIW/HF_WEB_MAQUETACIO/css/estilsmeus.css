@@ -2,40 +2,59 @@
     margin: 0;
     box-sizing: border-box;
     background-color: rgb(129, 36, 206);
+    font-family: 'Inter';
 }
 
-main {
+/*------------------------------HEADER--------------------------------*/
+header {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.linkHead li a {
-    text-decoration: none;
-    color: black;
-
+.logoWeb {
+    width: 90px;
 }
 
-.barraMenu ul li {
-    list-style: none;
-    display: inline;
-    border: solid black;
+.optLinks ul {
+    margin: 0;
+    padding: 0;
+    border: solid black 1px;
     background-color: white;
     border-radius: 6px;
+
+}
+
+.optLinks ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.optLinks ul li a {
+    text-decoration: none;
+    color: black;
     font-size: 1.2em;
 }
+
+/*---------------------------------------------------------*/
+
 /* Efecte blau quan pases per la opció */
 .barraMenu ul li:hover {
     background-color: #89b2ce;
+    color: white;
 
 }
 
 /* Opció de la Home seleccionada */
 .opcSelec {
     background-color: #89b2ce;
+    color: white;
 }
 
-.logoNA {
-    width: 90px;
-}
 
 /* Estil per als hr més gruixos */
 .hrGros {
@@ -44,7 +63,12 @@ main {
     background-color: black;
 }
 
-/* Estil per als texts centrats */
+/* ------------ESTILS PER A LES COLUMNES---------- */
+
 .colCentre {
     text-align: center;
+}
+
+.colDreta {
+    text-align: end;
 }
