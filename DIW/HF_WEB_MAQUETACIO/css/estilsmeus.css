@@ -3,9 +3,22 @@
     box-sizing: border-box;
 }
 
-.barraMenu ul li{
+.barraMenu ul li {
     list-style: none;
     display: inline;
     border: solid black;
     border-radius: 20px;
+}
+
+
+/* Estil per als hr més gruixos */
+.hrGros {
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+/* Estil per als texts centrats */
+.colCentre {
+    text-align: center;
 }
