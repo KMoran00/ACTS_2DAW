@@ -7,7 +7,7 @@
 
 /*------------------------------HEADER--------------------------------*/
 header {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
@@ -18,12 +18,14 @@ header {
 .optLinks ul {
     margin: 0;
     padding: 0;
-    border: solid black 1px;
-    border-radius: 6px;
-
     font-size: 20px;
     line-height: 58px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.074em;
+    margin-top: 16px;
+
+    border-radius: 6px;
+    border: solid black 1px;
+
 }
 
 .optLinks ul li {
@@ -33,19 +35,22 @@ header {
     padding-left: 0.5em;
     padding-right: 0.5em;
 
+    
 }
 
 .optLinks ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.2em;
+    
 }
 
 .opcHeader ul li {
     list-style: none;
     display: inline-block;
-    font-size: 1.5em;
-
+    font-size: 1.7em;
+    
+    margin-top: 30px;
 }
 
 /*---------------------------------------------------------*/
