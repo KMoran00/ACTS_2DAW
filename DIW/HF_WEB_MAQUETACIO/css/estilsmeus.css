@@ -52,6 +52,12 @@ header {
 
     margin-top: 30px;
 }
+/*--------------------MAIN--------------------------*/
+main{
+    margin-top: 40px;
+    margin-bottom: 35px;
+
+}
 
 /*--------------------EFECTES/CONFIG--------------------------*/
 
@@ -80,7 +86,11 @@ header {
     height: 2px;
     background-color: black;
 }
-
+.hrFinoMig{
+    border: none;
+    height: 1px;
+    background-color: grey;
+}
 /* ------------ESTILS PER A LES COLUMNES---------- */
 
 .colCentre {
