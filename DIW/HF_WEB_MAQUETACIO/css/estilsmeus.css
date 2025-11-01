@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(129, 36, 206);
+    background-color: rgb(66, 59, 59);
     font-family: 'Inter';
 }
 
@@ -19,18 +19,19 @@ header {
     margin: 0;
     padding: 0;
     border: solid black 1px;
-    background-color: white;
     border-radius: 6px;
 
+    font-size: 20px;
+    line-height: 58px;
+    letter-spacing: 0.02em;
 }
 
 .optLinks ul li {
     list-style: none;
     display: inline-block;
-    font-size: 1.2em;
-
-    padding-left: 1em;
-    padding-right: 1em;
+    background-color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 
 }
 
@@ -40,20 +41,24 @@ header {
     font-size: 1.2em;
 }
 
+.opcHeader ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5em;
+
+}
+
 /*---------------------------------------------------------*/
 
 /* Efecte blau quan pases per la opció */
-.barraMenu ul li:hover {
+.optLinks ul li:hover {
     background-color: #89b2ce;
-    color: white;
 
 }
-
-/* Opció de la Home seleccionada */
-.opcSelec {
-    background-color: #89b2ce;
+.optLinks ul li a:hover {
     color: white;
 }
+
 
 
 /* Estil per als hr més gruixos */
