@@ -1,8 +1,10 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 208, 208);
     font-family: 'Inter';
+    color: black;
+
 }
 
 /*------------------------------HEADER--------------------------------*/
@@ -20,17 +22,17 @@ header {
     padding: 0;
     line-height: 40px;
     font-size: 19px;
-    margin-top: 16px;
+    margin-top: 19px;
+    /*ARREGLAR - es talla quan puge o baixe*/
+    margin-left: 20px;
 
     display: flex;
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
-
 }
 
 .optLinks ul li {
-    list-style: none;
     flex: 1;
     text-align: center;
     background-color: white;
@@ -39,38 +41,57 @@ header {
 }
 
 .optLinks ul li a {
-    text-decoration: none;
-    color: black;
     font-size: 1.2em;
 
 }
 
 .opcHeader ul li {
-    list-style: none;
     display: inline-block;
     font-size: 1.7em;
 
-    margin-top: 30px;
+    margin-top: 28px;
 }
+
 /*--------------------MAIN--------------------------*/
-main{
+main {
     margin-top: 40px;
     margin-bottom: 35px;
 }
 
+
+/*--------------------FOOTER--------------------------*/
+.desplegables {
+    display: inline-block;
+}
+
+.pagaments{
+    display: flex ;
+    font-size: 3em;
+}
+
+
 /*--------------------EFECTES/CONFIG--------------------------*/
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------ESTILS PER ALS EFECTES DEL HEADER ---------- */
 
 /* Efecte blau quan pases per la opció */
 .optLinks ul li:hover {
     background-color: #89b2ce;
-
 }
 
 .optLinks ul li a:hover {
     color: white;
 }
 
-/* Efecte de la primera opció */
+/* Efecte de la primera opció del header */
 .optLinks ul li:first-child {
     background-color: #89b2ce;
 }
@@ -79,17 +100,33 @@ main{
     color: white;
 }
 
-/* Estil per als hr més gruixos */
+/* ------------ESTILS PER ALS EFECTES DEL FOOTER ---------- */
+.desplegables ul li a:hover {
+    color: grey;
+}
+
+.desplegables ul li:first-child {
+    line-height: 81px;
+    font-weight: 900;
+}
+
+/*afegir efecte a la fletxa -- preguntar*/
+
+
+/* ------------ESTILS PER ALS hr ---------- */
+
 .hrGros {
     border: none;
     height: 2px;
     background-color: black;
 }
-.hrFinoMig{
+
+.hrFinoMig {
     border: none;
     height: 1px;
     background-color: grey;
 }
+
 /* ------------ESTILS PER A LES COLUMNES---------- */
 
 .colCentre {
