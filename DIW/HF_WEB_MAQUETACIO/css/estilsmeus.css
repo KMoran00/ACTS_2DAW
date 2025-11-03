@@ -64,26 +64,20 @@ main {
     display: inline-block;
 }
 
-.pagaments {
+.pagaments ul{
     display: flex;
+    flex-direction: row;
 }
 
-.pagaments ul li a img{
+.pagaments ul li a img {
     width: 3.2em;
 }
 
-.rrss {
+.rrss ul{
     display: flex;
+    flex-direction: row;
+
     font-size: 1.6em;
-
-}
-
-/*REVISAR*/
-.rrss:nth-child {
-  font-size: 0.625em;
-  line-height: 6.84em;
-  font-weight: 584;
-  letter-spacing: 0.038em;
 }
 
 
