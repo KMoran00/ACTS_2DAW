@@ -24,7 +24,7 @@ header {
     font-size: 19px;
     margin-top: 19px;
     /*ARREGLAR - es talla quan puge o baixe*/
-    padding-left: 20px;
+    margin-left: 20px;
 
     display: flex;
     border-radius: 10px;
@@ -73,10 +73,19 @@ main {
 }
 
 .rrss {
-    display: inline-flex;
+    display: flex;
     font-size: 1.6em;
 
 }
+
+/*REVISAR*/
+.rrss:nth-child {
+  font-size: 0.625em;
+  line-height: 6.84em;
+  font-weight: 584;
+  letter-spacing: 0.038em;
+}
+
 
 /*--------------------EFECTES/CONFIG--------------------------*/
 
