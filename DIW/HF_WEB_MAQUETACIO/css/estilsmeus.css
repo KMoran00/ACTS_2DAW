@@ -23,6 +23,7 @@ header {
     line-height: 40px;
     font-size: 19px;
     margin-top: 19px;
+    text-align: center;
     /*ARREGLAR - es talla quan puge o baixe*/
     margin-left: 20px;
 
@@ -60,25 +61,39 @@ main {
 
 
 /*--------------------FOOTER--------------------------*/
+/* Part esquerra */
+
 .desplegables {
     display: inline-block;
 }
-
-.pagaments ul{
-    display: flex;
-    flex-direction: row;
+.desplegables ul li:first-child {
+    line-height: 81px;
+    font-weight: 900;
 }
 
-.pagaments ul li a img {
-    width: 3.2em;
+/* Part dreta */
+.rrss p {
+    line-height: 81px;
+    font-weight: 900;
 }
-
 .rrss ul{
     display: flex;
     flex-direction: row;
 
     font-size: 1.6em;
 }
+
+/* ARREGLAR - orden/separación */
+.pagaments ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pagaments ul li a img {
+    width: 3.2em;
+}
+
+
 
 
 /*--------------------EFECTES/CONFIG--------------------------*/
@@ -116,10 +131,6 @@ a {
     color: grey;
 }
 
-.desplegables ul li:first-child {
-    line-height: 81px;
-    font-weight: 900;
-}
 
 /*afegir efecte a la fletxa -- preguntar*/
 
