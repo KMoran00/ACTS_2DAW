@@ -23,6 +23,10 @@ switch ($fruta) {
     case "Uvas":
         echo PRECIO_UVAS;
         break;
+    }
 
-}
+    /*FALTA LA PARTE DE  En el caso de que
+la fruta no tenga asignado un precio debe dar el mensaje "No quedan
+existencias de esta fruta".
+*/
 ?>
