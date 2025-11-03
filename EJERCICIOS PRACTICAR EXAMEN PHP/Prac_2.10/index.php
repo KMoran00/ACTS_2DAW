@@ -16,11 +16,10 @@ echo ("Total: " .number_format($total,2)." euros <br>");
 echo"Gracias por su compra <br>";
 echo"<br>";
 //-------------------
-if(PRECIO_JUDIAS < 1.50 ) {
-    echo "judias cuestan 1.50 <br>";
-}
-if( PRECIO_PATATAS <1.50 ) {
-    echo "las patatas son más baratas <br>";
+if(PRECIO_JUDIAS < PRECIO_PATATAS ) {
+    echo "las patatas son más caras que las judías <br>";
+}else{
+    echo"las judías son más caras que las patatas";
 }
 
 
