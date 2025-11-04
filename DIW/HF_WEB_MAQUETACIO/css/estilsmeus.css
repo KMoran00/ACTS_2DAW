@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(218, 208, 208);
+    background-color: rgb(129, 118, 118);
     font-family: 'Inter';
     color: black;
 
@@ -21,11 +21,11 @@ header {
     margin: 0;
     padding: 0;
     line-height: 40px;
-    font-size: 19px;
+    font-size:  1em;;
     margin-top: 19px;
     text-align: center;
-    /*ARREGLAR - es talla quan puge o baixe*/
-    margin-left: 20px;
+    justify-content: center;
+    margin-left: 46px;
 
     display: flex;
     border-radius: 10px;
@@ -37,12 +37,13 @@ header {
     flex: 1;
     text-align: center;
     background-color: white;
-    padding: 0.5em 0.5em;
+    padding: 0.4em 0.4em;
     border-left: 1px solid black;
+    
 }
 
 .optLinks ul li a {
-    font-size: 1.2em;
+    font-size: 1em;
 
 }
 
@@ -61,8 +62,9 @@ main {
 
 
 /*--------------------FOOTER--------------------------*/
-/* Part esquerra */
 
+
+/* Part esquerra */
 .desplegables {
     display: inline-block;
 }
