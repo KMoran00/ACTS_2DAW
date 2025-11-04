@@ -21,7 +21,8 @@ header {
     margin: 0;
     padding: 0;
     line-height: 40px;
-    font-size:  1em;;
+    font-size: 1em;
+    ;
     margin-top: 19px;
     margin-left: 46px;
 
@@ -37,14 +38,15 @@ header {
     background-color: white;
     padding: 0.4em;
     border-left: 1px solid black;
-    
-    
+
+
 }
 
 .optLinks ul li a {
     font-size: 1em;
     font-weight: 700;
 }
+
 /* Opc de iconos del FA */
 .opcHeader ul li {
     display: inline-block;
@@ -62,36 +64,50 @@ main {
 
 /*--------------------FOOTER--------------------------*/
 
+footer{
+    margin-top: 3%;
+}
+
+.desplegables,
+.rrss,
+.pagaments {
+    vertical-align: top;
+}
 
 /* Part esquerra */
 .desplegables {
     display: inline-block;
 }
-.desplegables ul li:first-child {
-    line-height: 81px;
+
+.desplegables ul li:first-child,
+.rrss p {
     font-weight: 900;
+    line-height: normal;
+
+    padding-bottom: 40px;
 }
 
-/* Part dreta */
-.rrss p {
-    line-height: 81px;
-    font-weight: 900;
-}
-.rrss ul{
+.rrss ul {
     display: flex;
     flex-direction: row;
-
     font-size: 1.6em;
+    margin-left: -29px;
+}
+
+.rrss li{
+    padding-right: 25px;
+    padding-bottom:20px ;
 }
 
 /* ARREGLAR - orden/separación */
-.pagaments ul{
+.pagaments ul {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
-.pagaments ul li a img {
+.pagaments ul li img {
     width: 3.2em;
+
 }
 
 
@@ -118,11 +134,14 @@ a {
     color: white;
 }
 
+.opcHeader ul li a:hover{
+    cursor: pointer;
+}
+
 /* Efecte de la primera opció del header */
 .optLinks ul li:first-child {
     background-color: #89b2ce;
     border-left: none;
-
 }
 
 .optLinks ul li:first-child a {
