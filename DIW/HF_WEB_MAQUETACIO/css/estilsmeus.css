@@ -47,7 +47,7 @@ header {
     font-weight: 700;
 }
 
-/* Opc de iconos del FA */
+/* Opc de icones del FA */
 .opcHeader ul li {
     display: inline-block;
     font-size: 1.7em;
@@ -89,6 +89,10 @@ footer{
   flex: 1;
   line-height: 1.4;
   display: inline-block;
+
+  max-width: 125px; /* ajusta este valor al ancho que quieras */
+  white-space: normal; /* permite que haga saltos automáticos */
+  word-break: keep-all; /* no corta palabras por la mitad */
 }
 
 /* Fletxes */
