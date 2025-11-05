@@ -75,6 +75,10 @@ main {
 footer {
     margin-top: 3%;
 }
+.bloque-footer {
+    margin-bottom: 40px;
+}
+
 
 .desplegables,
 .rrss,
@@ -143,18 +147,22 @@ footer {
 .pagaments ul {
     display: flex;
     flex-direction: row;
-    padding-top: 45px;
+    padding-top: 49px;
     padding-right: 40px;
 }
 
 .pagaments ul li img {
-    width: 3.4em;
+    width: 3.6em;
 
 }
 .pagaments:not(:last-child) {
     margin-bottom: -30px;
 }
 
+.copiright{
+    font-size: 17px;
+    margin-top: 20px;
+}
 
 /*--------------------EFECTES/CONFIG--------------------------*/
 
@@ -195,10 +203,6 @@ a {
 .desplegables ul li a:hover {
     color: grey;
 }
-
-
-/*afegir efecte a la fletxa -- preguntar*/
-
 
 /* ------------ESTILS PER ALS hr ---------- */
 
