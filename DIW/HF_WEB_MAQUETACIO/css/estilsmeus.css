@@ -19,33 +19,39 @@ header {
 
 .opcLinks ul {
     margin: 0;
-    padding: 0;
-    line-height: 40px;
-    font-size: 1em;
-    ;
-    margin-top: 19px;
+    padding: 0.5px 0;
+    margin-top: 17px;
     margin-left: 46px;
 
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
+    background: white;
+    box-sizing: border-box;
 }
 
 .opcLinks ul li {
-    flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    padding: 0.4em;
     border-left: 1px solid black;
-
-
+    padding: 0.35em 1.35em;
+    line-height: 1;
+    height: 55px;
+    box-sizing: border-box;
 }
 
 .opcLinks ul li a {
-    font-size: 1em;
-    font-weight: 700;
+    font-size: 1.26em;
+    font-weight: 600;
+    white-space: nowrap;
+
 }
+
+
 
 /* Opc de icones del FA */
 .opcHeader ul li {
@@ -64,7 +70,7 @@ main {
 
 /*--------------------FOOTER--------------------------*/
 
-footer{
+footer {
     margin-top: 3%;
 }
 
@@ -78,35 +84,35 @@ footer{
     display: inline-block;
     padding-right: 10px;
 }
+
 .desplegables ul li {
-  display: flex;
-  align-items: center;    
-  justify-content: space-between;
-  gap: 6px;                  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
 }
 
 .desplegables ul li a {
-  flex: 1;
-  line-height: 1.4;
-  display: inline-block;
-
-  max-width: 125px; /* ajusta este valor al ancho que quieras */
-  white-space: normal; /* permite que haga saltos automáticos */
-  word-break: keep-all; /* no corta palabras por la mitad */
+    flex: 1;
+    line-height: 1.4;
+    display: inline-block;
+    max-width: 125px;
 }
 
 /* Fletxes */
 .desplegables ul li i {
-  flex-shrink: 0;  /* Fletxes amb la mateixa mida i pos. */
-  font-size: 0.9em;
-  margin-left: 8px;
-  align-self: center;        
+    flex-shrink: 0;
+    /* Fletxes amb la mateixa mida i pos. */
+    font-size: 0.9em;
+    margin-left: 8px;
+    align-self: center;
 }
 
 
 .desplegables ul li:first-child,
 .rrss p {
-    font-weight: 900;
+    font-size: 17px;
+    font-weight: 804;
     line-height: normal;
 
     padding-bottom: 40px;
@@ -119,9 +125,9 @@ footer{
     margin-left: -29px;
 }
 
-.rrss li{
+.rrss li {
     padding-right: 25px;
-    padding-bottom:20px ;
+    padding-bottom: 20px;
 }
 
 /* ARREGLAR - orden/separación */
@@ -159,7 +165,7 @@ a {
     color: white;
 }
 
-.opcHeader ul li a:hover{
+.opcHeader ul li a:hover {
     cursor: pointer;
 }
 
