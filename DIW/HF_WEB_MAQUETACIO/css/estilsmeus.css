@@ -17,7 +17,7 @@ header {
     width: 90px;
 }
 
-.optLinks ul {
+.opcLinks ul {
     margin: 0;
     padding: 0;
     line-height: 40px;
@@ -32,7 +32,7 @@ header {
     overflow: hidden;
 }
 
-.optLinks ul li {
+.opcLinks ul li {
     flex: 1;
     text-align: center;
     background-color: white;
@@ -42,7 +42,7 @@ header {
 
 }
 
-.optLinks ul li a {
+.opcLinks ul li a {
     font-size: 1em;
     font-weight: 700;
 }
@@ -78,7 +78,26 @@ footer{
     display: inline-block;
     padding-right: 10px;
 }
+.desplegables ul li {
+  display: flex;
+  align-items: center;    
+  justify-content: space-between;
+  gap: 6px;                  
+}
 
+.desplegables ul li a {
+  flex: 1;
+  line-height: 1.4;
+  display: inline-block;
+}
+
+/* Fletxes */
+.desplegables ul li i {
+  flex-shrink: 0;  /* Fletxes amb la mateixa mida i pos. */
+  font-size: 0.9em;
+  margin-left: 8px;
+  align-self: center;        
+}
 
 
 .desplegables ul li:first-child,
@@ -128,11 +147,11 @@ a {
 /* ------------ESTILS PER ALS EFECTES DEL HEADER ---------- */
 
 /* Efecte blau quan pases per la opció */
-.optLinks ul li:hover {
+.opcLinks ul li:hover {
     background-color: #89b2ce;
 }
 
-.optLinks ul li a:hover {
+.opcLinks ul li a:hover {
     color: white;
 }
 
@@ -141,12 +160,12 @@ a {
 }
 
 /* Efecte de la primera opció del header */
-.optLinks ul li:first-child {
+.opcLinks ul li:first-child {
     background-color: #89b2ce;
     border-left: none;
 }
 
-.optLinks ul li:first-child a {
+.opcLinks ul li:first-child a {
     color: white;
 }
 
