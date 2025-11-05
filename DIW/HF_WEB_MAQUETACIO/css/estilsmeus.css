@@ -94,23 +94,28 @@ main {
     width: auto;
     border-bottom: 1px solid black;
     border-top: 1px solid grey;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .colDespleg {
+    width: auto;
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .desplegables {
-    display: inline-block;
-    padding-right: 10px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .desplegables ul li {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
 }
 
