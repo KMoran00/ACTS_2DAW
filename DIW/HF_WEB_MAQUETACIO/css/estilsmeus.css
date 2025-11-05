@@ -85,25 +85,26 @@ main {
 
 /*--------------------FOOTER--------------------------*/
 
-footer {
-    margin-top: 3%;
+.sense_separacio {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.bloque-footer {
-    margin-bottom: 40px;
+.footer {
+    width: auto;
+    border-bottom: 1px solid black;
+    border-top: 1px solid grey;
 }
 
-
-.desplegables,
-.rrss,
-.pagaments {
-    vertical-align: top;
+.colDespleg {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .desplegables {
     display: inline-block;
     padding-right: 10px;
-
 }
 
 .desplegables ul li {
@@ -111,14 +112,12 @@ footer {
     align-items: center;
 
     justify-content: space-between;
-    gap: 6px;
 }
 
 .desplegables ul li a {
     flex: 1;
     line-height: 1.4;
     display: inline-block;
-    max-width: 165px;
     font-size: 18px;
     font-weight: 500;
 }
