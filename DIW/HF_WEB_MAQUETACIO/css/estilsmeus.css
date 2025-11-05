@@ -74,10 +74,12 @@ footer{
     vertical-align: top;
 }
 
-/* Part esquerra */
 .desplegables {
     display: inline-block;
+    padding-right: 10px;
 }
+
+
 
 .desplegables ul li:first-child,
 .rrss p {
