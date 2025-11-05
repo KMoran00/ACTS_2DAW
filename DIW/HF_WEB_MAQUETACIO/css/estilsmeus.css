@@ -63,8 +63,10 @@ header {
 
 /*--------------------MAIN--------------------------*/
 main {
-    padding-top: 40px;
+    padding-top: 35px;
     padding-bottom: 35px;
+    font-size: 1.1em;
+    letter-spacing: -0.033em;
 }
 
 
@@ -83,11 +85,13 @@ footer {
 .desplegables {
     display: inline-block;
     padding-right: 10px;
+
 }
 
 .desplegables ul li {
     display: flex;
     align-items: center;
+
     justify-content: space-between;
     gap: 6px;
 }
@@ -101,8 +105,8 @@ footer {
 
 /* Fletxes */
 .desplegables ul li i {
-    flex-shrink: 0;
     /* Fletxes amb la mateixa mida i pos. */
+    flex-shrink: 0;
     font-size: 0.9em;
     margin-left: 8px;
     align-self: center;
@@ -114,15 +118,17 @@ footer {
     font-size: 17px;
     font-weight: 804;
     line-height: normal;
-
     padding-bottom: 40px;
+}
+.rrss {
+    text-align: center;
 }
 
 .rrss ul {
     display: flex;
     flex-direction: row;
     font-size: 1.6em;
-    margin-left: -29px;
+    justify-content: center;
 }
 
 .rrss li {
@@ -130,18 +136,24 @@ footer {
     padding-bottom: 20px;
 }
 
-/* ARREGLAR - orden/separación */
+.pagaments {
+    margin-left: 10px;  
+}
+
 .pagaments ul {
     display: flex;
     flex-direction: row;
+    padding-top: 45px;
+    padding-right: 40px;
 }
 
 .pagaments ul li img {
-    width: 3.2em;
+    width: 3.4em;
 
 }
-
-
+.pagaments:not(:last-child) {
+    margin-bottom: -30px;
+}
 
 
 /*--------------------EFECTES/CONFIG--------------------------*/
