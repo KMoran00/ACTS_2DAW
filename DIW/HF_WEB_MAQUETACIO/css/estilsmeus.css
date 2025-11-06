@@ -3,7 +3,7 @@
     box-sizing: border-box;
     font-family: 'Inter';
     color: black;
-
+    background-color: blue;
 }
 
 /*------------------------------HEADER--------------------------------*/
@@ -56,7 +56,6 @@
     font-size: 1.26em;
     font-weight: 600;
     white-space: nowrap;
-
 }
 
 /* Opc de icones del FA */
@@ -67,11 +66,12 @@
     justify-content: end;
     font-size: 1.7em;
     padding-top: 28px;
+    gap: 5px;
 }
+
 
 .opcHeader ul li a {
     font-size: 1em;
-    padding-top: 28px;
 }
 
 /*--------------------MAIN--------------------------*/
