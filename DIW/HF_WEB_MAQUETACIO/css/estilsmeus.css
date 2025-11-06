@@ -3,7 +3,6 @@
     box-sizing: border-box;
     font-family: 'Inter';
     color: black;
-    background-color: blue;
 }
 
 /*------------------------------HEADER--------------------------------*/
@@ -76,10 +75,9 @@
 
 /*--------------------MAIN--------------------------*/
 main {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 1.1em;
-    letter-spacing: -0.033em;
 }
 
 
@@ -94,7 +92,7 @@ main {
     width: auto;
     border-bottom: 1px solid black;
     border-top: 1px solid grey;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -108,10 +106,18 @@ main {
 }
 
 .desplegables {
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.desplegables ul {
+    display: flex;
+    flex-direction: column; 
+    max-width: 210px;
+    align-items: flex-start;
+    gap: 6px; 
+}
+
 
 .desplegables ul li {
     display: flex;
@@ -162,24 +168,21 @@ main {
 }
 
 .pagaments {
-    margin-left: 10px;
+    margin-top: 0;
 }
 
 .pagaments ul {
     display: flex;
     flex-direction: row;
-    padding-top: 49px;
+    padding-top: 0; 
     padding-right: 40px;
 }
 
 .pagaments ul li img {
     width: 3.6em;
-
 }
 
-.pagaments:not(:last-child) {
-    margin-bottom: -30px;
-}
+
 
 .copiright {
     font-size: 17px;
@@ -225,20 +228,6 @@ a {
 .desplegables ul li a:hover {
     color: grey;
 }
-
-/* ------------ESTILS PER ALS hr ---------- 
-
-.ambVora {
-    width: 100%;
-    border-bottom: 1px solid black;
-
-}
-
-.ambVoraFina {
-    width: 100%;
-    border-bottom: 1px solid grey;
-}
-*/
 /* ------------ESTILS PER A LES COLUMNES---------- */
 
 .colCentre {
