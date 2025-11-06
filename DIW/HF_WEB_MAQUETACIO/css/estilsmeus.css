@@ -7,15 +7,15 @@
 
 /*------------------------------HEADER--------------------------------*/
 .header {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 1.25em;
+    margin-bottom: 0.9em;
     width: auto;
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625em solid black;
 }
 
 .logoWeb {
-    width: 90px;
-    margin-bottom: 15px;
+    width: 5.6em;
+    margin-bottom: 0.9em;
 }
 
 .opcLinks {
@@ -26,14 +26,13 @@
 
 .opcLinks ul {
     margin: 0;
-    padding: 0.5px 0;
-    margin-top: 17px;
-    margin-left: 46px;
-
+    padding: 0.05em 0;
+    margin-top: 1.06em;
+    margin-left: 2.9em;
     display: inline-flex;
     align-items: center;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 0.6em;
+    border: 0.0625em solid black;
     overflow: hidden;
     background: white;
     box-sizing: border-box;
@@ -44,10 +43,10 @@
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-left: 1px solid black;
+    border-left: 0.0625em solid black;
     padding: 0.35em 1.35em;
     line-height: 1;
-    height: 55px;
+    height: 3.4em;
     box-sizing: border-box;
 }
 
@@ -58,16 +57,14 @@
 }
 
 /* Opc de icones del FA */
-
 .opcHeader {
     display: flex;
     align-items: center;
     justify-content: end;
     font-size: 1.7em;
-    padding-top: 28px;
-    gap: 5px;
+    padding-top: 1.75em;
+    gap: 0.3em;
 }
-
 
 .opcHeader ul li a {
     font-size: 1em;
@@ -75,11 +72,10 @@
 
 /*--------------------MAIN--------------------------*/
 main {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
     font-size: 1.1em;
 }
-
 
 /*--------------------FOOTER--------------------------*/
 
@@ -90,8 +86,8 @@ main {
 
 .footer {
     width: auto;
-    border-bottom: 1px solid black;
-    border-top: 1px solid grey;
+    border-bottom: 0.0625em solid black;
+    border-top: 0.0625em solid grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,8 +97,8 @@ main {
     width: auto;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .desplegables {
@@ -110,14 +106,14 @@ main {
     align-items: center;
     justify-content: space-between;
 }
+
 .desplegables ul {
     display: flex;
-    flex-direction: column; 
-    max-width: 210px;
+    flex-direction: column;
+    max-width: 13.125em;
     align-items: flex-start;
-    gap: 6px; 
+    gap: 0.37em;
 }
-
 
 .desplegables ul li {
     display: flex;
@@ -129,7 +125,7 @@ main {
     flex: 1;
     line-height: 1.4;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
 }
 
@@ -138,17 +134,16 @@ main {
     /* Fletxes amb la mateixa mida i pos. */
     flex-shrink: 0;
     font-size: 0.9em;
-    margin-left: 8px;
+    margin-left: 0.5em;
     align-self: center;
 }
 
-
 .desplegables ul li:first-child,
 .rrss p {
-    font-size: 17px;
+    font-size: 1.06em;
     font-weight: 804;
     line-height: normal;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
 }
 
 .rrss {
@@ -161,32 +156,25 @@ main {
     font-size: 1.6em;
     justify-content: center;
 }
-
 .rrss li {
-    padding-right: 25px;
-    padding-bottom: 20px;
+    padding-right: 1.56em;
+    padding-bottom: 1.25em;
 }
-
 .pagaments {
     margin-top: 0;
 }
-
 .pagaments ul {
     display: flex;
     flex-direction: row;
-    padding-top: 0; 
-    padding-right: 40px;
+    padding-top: 0;
+    padding-right: 2.5em;
 }
-
 .pagaments ul li img {
     width: 3.6em;
 }
-
-
-
 .copiright {
-    font-size: 17px;
-    margin-top: 20px;
+    font-size: 1.06em;
+    margin-top: 1.25em;
 }
 
 /*--------------------EFECTES/CONFIG--------------------------*/
@@ -194,7 +182,6 @@ main {
 ul li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
@@ -205,11 +192,9 @@ a {
 .opcLinks ul li:hover {
     background-color: #89b2ce;
 }
-
 .opcLinks ul li:hover a {
     color: white;
 }
-
 .opcHeader ul li a:hover {
     cursor: pointer;
 }
@@ -219,7 +204,6 @@ a {
     background-color: #89b2ce;
     border-left: none;
 }
-
 .opcLinks ul li:first-child a {
     color: white;
 }
@@ -228,12 +212,11 @@ a {
 .desplegables ul li a:hover {
     color: grey;
 }
-/* ------------ESTILS PER A LES COLUMNES---------- */
 
+/* ------------ESTILS PER A LES COLUMNES---------- */
 .colCentre {
     text-align: center;
 }
-
 .colDreta {
     text-align: end;
 }
