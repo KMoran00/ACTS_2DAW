@@ -1,0 +1,200 @@
+/* ====== ESTILOS CRUD PRODUCTOS ====== */
+
+/* ---- Fuente y fondo general ---- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ---- Cabeceras ---- */
+h1, h2 {
+    text-align: center;
+    color: #222;
+    margin-top: 20px;
+}
+
+/* ---- Enlaces ---- */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* ---- Tabla principal ---- */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 85%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #0077cc;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ---- Botones / Enlaces de acción ---- */
+button,
+input[type="submit"],
+input[type="button"] {
+    background-color: #0077cc;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #005fa3;
+}
+
+/* ---- Formularios ---- */
+form {
+    background-color: #fff;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ---- Enlace de volver ---- */
+
+p a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #555;
+}
+
+p a:hover {
+    color: #0077cc;
+}
+
+/* ---- Mensaje de tabla vacía ---- */
+td[colspan="6"] {
+    font-style: italic;
+    color: #ce4444;
+}
+
+/* ==== Botones del formulario ==== */
+.botones-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón principal (Guardar) */
+form button[type="submit"] {
+    background-color: #0077cc;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+button.carrito{
+    background-color: #4152c0;
+}
+button.carrito:hover{
+    background-color: #5468e7;
+}
+
+/* ==== Encabezado con carrito ==== */
+.encabezado {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.acciones-superiores {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.carrito-icono {
+    font-size: 2em;
+    color: #0077cc;
+    display: flex;
+}
+
+.carrito-icono:hover {
+    color: #005fa3;
+}
+
+/* ==== Enlace Añadir Producto centrado ==== */
+.enlace-centrado {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.enlace-centrado a {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.enlace-centrado a:hover {
+    background-color: #005fa3;
+}
