@@ -14,9 +14,9 @@
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
         <br><br>
-        <label for="coment">Comentario: </label>
-        <textarea name="coment" id="coment" placeholder="Escribe tu comentario..." rows="3" cols="20" required>
-        </textarea>
+        <label for="coment">Comentario: </label> 
+        <br>
+        <textarea name="coment" id="coment" placeholder="Escribe tu comentario..." rows="3" cols="20" required></textarea>
         <br><br>
         <input type="submit" value="Enviar">
     </form>
