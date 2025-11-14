@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    color: white;
+}
+
+img {
+    width: 7em;
+}
+
+.usuari {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#imgUser {
+    border-radius: 4em;
+    width: 5.25em;
+
+}
+
+/* ------------ESTILS PER A LES COLUMNES---------- */
+.colCentre {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.colDreta {
+    text-align: end;
+    background-color: red;
+}
+
+.colEsq {
+    text-align: start;
+
+    background-color: blue;
+}
