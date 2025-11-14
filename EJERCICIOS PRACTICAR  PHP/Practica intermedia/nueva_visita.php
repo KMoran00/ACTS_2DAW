@@ -9,21 +9,21 @@
 
 <body>
     <h1>Formulario de comentarios</h1>
-
-    <form method="POST">
+    <!-- Formulario que envía la info. a partir del método POST-->
+    <form action="insertar_visita.php" method="POST">
         <label for="nombre">Nombre: </label>
         <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
         <br><br>
-        <label for="coment">Comentario: </label> 
+        <label for="coment">Comentario: </label>
         <br>
-        <textarea name="coment" id="coment" placeholder="Escribe tu comentario..." rows="3" cols="20" required></textarea>
+        <textarea name="coment" id="coment" placeholder="Escribe tu comentario..." rows="3" cols="20"
+            required></textarea>
         <br><br>
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
     </form>
+    <br>
+    <a href='libro_visitas.php'>Listado de visitas</a>
 
 </body>
 
 </html>
-
-<?php
-?>

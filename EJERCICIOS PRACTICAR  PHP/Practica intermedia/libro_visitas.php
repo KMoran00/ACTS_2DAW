@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,9 +12,18 @@
     <h2>Listado de visitas</h2>
 </body>
 
-</html>
-
 <?php
+//Abre el archivo .txt y lista según el contenido que haya dentro
+$archivo = fopen('visitas.txt', 'r');
+if ($archivo) {
+    while (($linea = fgets($archivo)) !== false) {
+        echo $linea . "<br>";
+    }
+    fclose($archivo);
+}
+
+echo "<br>";
 echo "<a href='nueva_visita.php'>Nueva Visita</a>";
 
 ?>
+</html>
