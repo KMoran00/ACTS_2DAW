@@ -1,4 +1,8 @@
 <?php
+include "funciones.php";
+
+$mensaje =""; //Mensaje informativo
+
 ?>
 
 <!DOCTYPE html>
