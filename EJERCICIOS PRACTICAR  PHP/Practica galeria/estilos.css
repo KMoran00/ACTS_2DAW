@@ -1,0 +1,121 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del formulario de subida */
+.subida {
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.subida input[type="file"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.subida button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subida button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de la tabla */
+.tabla-galeria {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tabla-galeria thead {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.tabla-galeria th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+.tabla-galeria td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-galeria tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tabla-galeria tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estilos de miniatura */
+.miniatura {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del botón Borrar */
+.borrar {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.borrar:hover {
+    background-color: #c82333;
+}
+
+/* Mensaje informativo */
+p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 3px;
+}
