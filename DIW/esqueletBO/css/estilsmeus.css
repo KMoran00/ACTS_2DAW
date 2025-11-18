@@ -19,9 +19,14 @@
     justify-content: flex-end;
     gap: 2em;
 }
+.usuari p,
+.usuari i {
+    color: black !important;
+}
 
 .barraSepar {
     border-right: solid black 1px;
+    height: 3em;
 }
 
 #imgUser {
@@ -29,6 +34,7 @@
     width: 5em;
 }
 
+/* -------- Capçalera del llistat ----------*/
 .cabeceraList {
     display: flex;
     justify-content: center;
@@ -38,35 +44,56 @@
 
 /* -------- Menú Lateral ----------*/
 .menuLateral {
-    display: flex;
-    align-items: start;
-    height: 58em;
+    background-color: RGB(83, 144, 65);
+    height: 100vh;
+    padding-top: 1em;
 }
 
-ul li {
+.menuLateral ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.menuLateral ul li {
     list-style: none;
-    border-bottom: solid white 1px;
-    margin-top: 1em;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 0.8em 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0;
+    cursor: pointer;
 }
 
-ul li a {
+/* Text del menú */
+.menuLateral ul li a {
     text-decoration: none;
+    color: white;
+    
 }
 
+/* Hover blau */
+.menuLateral ul li:hover {
+    background-color: RGB(71, 72, 142);
+}
 
+/* Opció seleccionada */
+.menuLateral ul li.seleccionat {
+    background-color: RGB(71, 72, 142);
+}
+
+/* ------------------------------------------------ */
 /* ------------ESTILS PER A LES COLUMNES---------- */
 .colCentre {
     text-align: center;
-    background-color: blueviolet;
+    background-color: RGB(71, 72, 142);
 }
 
 .colDreta {
     text-align: end;
-    background-color: red;
 }
 
 .colEsq {
     text-align: start;
-
-    background-color: blue;
 }
