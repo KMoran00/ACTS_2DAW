@@ -5,9 +5,10 @@
     color: white;
 }
 
-.cabeceraInici{
+.cabeceraInici {
     height: 6.4em;
 }
+
 .logo img {
     width: 7em;
 }
@@ -29,9 +30,29 @@
 }
 
 .cabeceraList {
+    display: flex;
+    justify-content: center;
     height: 3.1em;
     align-items: center;
 }
+
+/* -------- Menú Lateral ----------*/
+.menuLateral {
+    display: flex;
+    align-items: start;
+    height: 58em;
+}
+
+ul li {
+    list-style: none;
+    border-bottom: solid white 1px;
+    margin-top: 1em;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
 
 /* ------------ESTILS PER A LES COLUMNES---------- */
 .colCentre {
