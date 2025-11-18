@@ -5,7 +5,10 @@
     color: white;
 }
 
-img {
+.cabeceraInici{
+    height: 6.4em;
+}
+.logo img {
     width: 7em;
 }
 
@@ -13,12 +16,21 @@ img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 2em;
+}
+
+.barraSepar {
+    border-right: solid black 1px;
 }
 
 #imgUser {
     border-radius: 4em;
-    width: 5.25em;
+    width: 5em;
+}
 
+.cabeceraList {
+    height: 3.1em;
+    align-items: center;
 }
 
 /* ------------ESTILS PER A LES COLUMNES---------- */
