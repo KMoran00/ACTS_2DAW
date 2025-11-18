@@ -22,6 +22,7 @@
     padding-bottom: 1em;
     padding-right: 1.6em;
 }
+
 .usuari p,
 .usuari i {
     color: black !important;
@@ -50,31 +51,31 @@
 .menuLateral {
     background-color: RGB(83, 144, 65);
     height: 100vh;
-    padding-top: 1em;
+    font-size: 1em;
 }
 
 .menuLateral ul {
-    padding-left: 0;
-    margin-left: 0;
+    margin-left: -55px;
+    margin-right: -15px;
 }
 
 .menuLateral ul li {
     list-style: none;
     width: 100%;
     border-bottom: 1px solid white;
-    padding: 0.8em 0.5em;
+    padding: 1em 0.5em;
     display: flex;
     align-items: center;
     gap: 0.5em;
-    margin-top: 0;
     cursor: pointer;
+
 }
 
 /* Text del menú */
 .menuLateral ul li a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 /* Hover blau */
