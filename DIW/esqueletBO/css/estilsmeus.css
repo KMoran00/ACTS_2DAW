@@ -10,7 +10,8 @@
 }
 
 .logo img {
-    width: 7em;
+    width: 112px;
+    margin-left: -10px;
 }
 
 .usuari {
@@ -42,6 +43,7 @@
     justify-content: center;
     height: 3.1em;
     align-items: center;
+    background-color: RGB(71, 72, 142);
 }
 
 /* -------- Menú Lateral ----------*/
@@ -89,7 +91,6 @@
 /* ------------ESTILS PER A LES COLUMNES---------- */
 .colCentre {
     text-align: center;
-    background-color: RGB(71, 72, 142);
 }
 
 .colDreta {
