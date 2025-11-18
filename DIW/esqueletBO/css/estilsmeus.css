@@ -196,10 +196,13 @@
     .iconoMenu {
         color: var(--color-secondari);
         font-size: 2.5em;
-        cursor: pointer;
         display: block;
         position: absolute;
         left: 0.1em;
+    }
+
+    .iconoMenu:hover {
+        cursor: pointer;
     }
 
     .logo img {
