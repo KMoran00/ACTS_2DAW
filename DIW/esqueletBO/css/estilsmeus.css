@@ -168,6 +168,112 @@
     font-weight: 900;
 }
 
+
+/* ========================= */
+/*     RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* Capçalera */
+    .cabeceraInici {
+        height: auto;
+        padding: 1em 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        flex: 1;
+    }
+
+    .iconoMenu {
+        color: var(--color-secondari);
+        font-size: 2.5em;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        left: 0.1em;
+    }
+
+    .logo img {
+        margin: 0;
+        display: block;
+        width: 90px;
+    }
+
+    .usuari {
+        justify-content: flex-end;
+        padding: 0;
+        gap: 0;
+        position: absolute;
+        right: 1.5em;
+    }
+
+    .usuari p {
+        display: none;
+    }
+
+    .barraSepar {
+        display: none;
+    }
+
+    .usuari i:not(.iconoMenu) {
+        display: none;
+    }
+
+    #imgUser {
+        width: 4em;
+        margin-top: 0.2em;
+    }
+
+    /* Menú lateral ocult */
+    .menuLateral {
+        display: none;
+    }
+
+    /* Formulari */
+    .formulari {
+        height: auto;
+        padding: 1em;
+    }
+
+    .formulariGrid {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+
+    .campFormulari label {
+        font-size: 0.9em;
+    }
+
+    .campFormulari input {
+        padding: 0.5em;
+    }
+
+    /* Botons verticals */
+    .botonesForm {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0.5em;
+        gap: 0.5em;
+    }
+
+    .botonesForm button {
+        padding: 0.7em 1em;
+        font-size: 0.9em;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 /* ------------------------------------------------ */
 /* ------------ESTILS PER A LES COLUMNES---------- */
 .colCentre {
