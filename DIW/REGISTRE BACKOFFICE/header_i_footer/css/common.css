@@ -7,6 +7,7 @@
     --color-quaternari : #ececec;
     --color-boto-netejar : #94949d;
     --color-general-lletra : #ffffff;
+    --color-vores : #495057;
 }
 
 * {
@@ -15,6 +16,10 @@
 }
 
 /* Estils del header */
+
+.contingut {
+    margin: 30px;
+}
 
 .centrar_header {
     display: flex;
@@ -73,6 +78,81 @@
 
 .iconaTancarSessio {
     margin-left: 15px;  
+}
+/* Estils dels filtres i dels botons de cambiar de pagina */
+
+button {
+    background-color: var(--color-secundari);
+}
+
+#opcions {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+#opcions button {
+    margin-right: 10px;
+}
+
+/* Estils nous */
+
+h1, h2, h3 {
+    color:var(--color-secundari);
+}
+
+.contingut_main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-quaternari);
+    padding-bottom: 15px;
+}
+
+.element_main {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 14px;
+    padding-bottom: 14px;
+}
+
+.element_main input {
+    margin-top: 13px;
+    padding-left: 12px;
+}
+
+.botons_accio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    padding-right: 14px;
+    margin-top: -2px;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+button i {
+    padding-right: 24px;
+}
+
+.cercar {
+    background-color: var(--color-terciari);
+}
+
+.netejar {
+    background-color: var(--color-boto-netejar);
+}
+
+.netejar i {
+    font-size: 0.75em;
+}
+
+form {
+    padding-top: 10px;
 }
 
 /* Estils titol de la página */
@@ -174,9 +254,10 @@
 
 input {
     padding: 6px;
+    padding-left: 10px;
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #495057;
+    border: 1px solid var(--color-vores);
     color: black;
 }
 
@@ -190,4 +271,19 @@ button {
 
 label {
     color : var(--color-secundari);
+}
+
+.filtre_select {
+    width: 100%;
+    margin-top: 12px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid var(--color-vores);
+    padding: 6px;
+    padding-left: 12px;
+}
+
+.filtre_select option {
+    background-color: white;
 }
