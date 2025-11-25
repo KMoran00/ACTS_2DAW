@@ -115,7 +115,7 @@
                 <form action="" class="contingut_main">
                     <div class="container-fluid sense-separacio">
                         <div class="row">
-                            <div class="col-4">
+                            <div id="filtres" class="col-4">
                                 <div class="element_main">
                                     <label for="filtreCLient">Client</label>
                                     <select class="filtre_select" id="filtreClient">
@@ -130,7 +130,9 @@
                             <div class="col-4">
                                 <div class="element_main">
                                     <label>Comparador</label>
-                                    <input id="cognom" name="cognom" type="text" maxlength="50">
+                                    <select class="filtre_select" id="filtreComparator">
+                                        <option value="">-- Tots els comparadors --</option>
+                                    </select>
                                 </div>
                                 <div class="element_main">
                                     <label for="dataFins">Data Fi</label>
@@ -140,18 +142,20 @@
                             <div class="col-4">
                                 <div class="element_main">
                                     <label>Favorit</label>
-                                    <input id="dni" name="dni" type="text" maxlength="9">
+                                    <select class="filtre_select" id="filtreFavorit">
+                                        <option value="">-- Tots els favorits --</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="botons_accio">
-                                    <button class="cercar" type="submit">
+                                    <button id="btnFiltrar" class="cercar" type="submit">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                         Cercar
                                     </button>
-                                    <button class="netejar" type="reset">
+                                    <button id="btnReset" class="netejar" type="reset">
                                         <i class="fa-solid fa-xmark"></i>
                                         Netejar
                                     </button>
@@ -161,7 +165,7 @@
                     </div>
                 </form>
                 <!-- Taula de Registres -->
-                <div class="taulaRegistre">
+                <div class="container-fluid taulaRegistre">
                     <button id="afegirNou">Afegir nou registre</button>
                     <table border="1" id="taula">
                         <thead>
