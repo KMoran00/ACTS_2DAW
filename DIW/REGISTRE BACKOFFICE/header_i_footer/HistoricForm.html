@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Formulari Registre</title>
-    <script src="../../../apiAccess/crud.js"></script>
-    <script src="./.././js/index.js"></script>
+  <script src="../apiAccess/crud.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -42,6 +42,35 @@
     <button type="button" id="btnCancelar" name="btnCancelar">Cancel·lar</button>
   </form>
 
+  <!-- MOSTRAR INFO AMB MODALS -->
+  <!-- Modal Client -->
+  <div id="modalClient" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('modalClient').style.display='none';">&times;</span>
+      <h3>Detalls del Client</h3>
+      <div id="modalClientContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal Comparador -->
+  <div id="modalComparador" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="modal-close"
+        onclick="document.getElementById('modalComparador').style.display='none';">&times;</span>
+      <h3>Detalls del Comparador</h3>
+      <div id="modalComparadorContent"></div>
+      <div id="modalComparadorProducts"></div>
+    </div>
+  </div>
+
+  <!-- Modal Favorit -->
+  <div id="modalFavorit" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('modalFavorit').style.display='none';">&times;</span>
+      <h3>Detalls del Favorit</h3>
+      <div id="modalFavoritContent"></div>
+    </div>
+  </div>
 </body>
 
 </html>

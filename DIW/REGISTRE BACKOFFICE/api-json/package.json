@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "tk": "npx json-server tendaFake.json --port 5000",
+    "wc": "npx json-server webCorporativa.json --port 5001",
+    "loc": "npx json-server location.json --port 5002"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
